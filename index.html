@@ -8,23 +8,49 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="body">
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="number">0</button>
-        <button class="operator" id="addBtn">+</button>
-        <button class="operator" id="sbtBtn">-</button>
-        <button class="operator" id="mulBtn">x</button>
-        <button class="operator" id="divBtn">÷</button>
-        <button id="clearBtn">clear</button>
-        <button id="equalBtn">Equal</button>
+    <div class="body column flex">
+        <div id="calculator">
+            <div id="display" class="flex field">
+                <p id="display-number">0</p>
+            </div>
+            <div id="buttons" class="flex column grow">
+
+                <div id="row1" class="flex space">
+                    <button id="clearBtn" class="text misc">AC</button>
+                    <button id="backBtn" class="text misc">&#8592</button>
+                    <button id="negativeBtn" class="text misc">+/-</button>
+                    <button id="divBtn" class="text operator">÷</button>
+                </div>
+    
+                <div id="row2" class="flex space">
+                    <button id="seven" class="text">7</button>
+                    <button id="eight" class="text">8</button>
+                    <button id="nine" class="text">9</button>
+                    <button id="mulBtn" class="text operator">x</button> 
+                </div>
+
+                <div id="row3" class="flex space">
+                    <button id="four" class="text">4</button>
+                    <button id="five" class="text">5</button>
+                    <button id="six" class="text">6</button>
+                    <button id="sbtBtn" class="text operator">-</button>
+                </div>
+
+                <div id="row4" class="flex space">
+                    <button id="one" class="text">1</button>
+                    <button id="two" class="text">2</button>
+                    <button id="three" class="text">3</button>
+                    <button id="addBtn" class="text operator">+</button>
+                </div>
+
+                <div id="row5" class="flex space">
+                    <button id="zero" class="text">0</button>
+                    <button id="float" class="text">.</button>
+                    <button id="equalBtn" class="text operator">=</button>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
